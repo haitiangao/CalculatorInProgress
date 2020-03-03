@@ -12,37 +12,37 @@
     <Button
         android:id="@+id/sin"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="sin"
+        android:text="@string/sin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
     <Button
         android:id="@+id/cos"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="cos"
+        android:text="@string/cos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sin" />
 
     <Button
         android:id="@+id/tan"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:layout_marginStart="4dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="tan"
+        android:text="@string/tan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/cos" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_height="0dp"
         android:gravity="center|end"
         android:padding="@dimen/dimen_16dp"
-        android:text="0"
+        android:text="@string/_0"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -68,7 +68,7 @@
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="AC"
+        android:text="@string/ac"
         app:layout_constraintBottom_toTopOf="@+id/space3"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toEndOf="@+id/division_button" />
@@ -76,25 +76,39 @@
     <Button
         android:id="@+id/neg_pos_button"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="+/-"
+        android:text="@string/negate"
         app:layout_constraintBottom_toTopOf="@+id/sin"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
     <Button
         android:id="@+id/modulus_button"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="94dp"
+        android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
-        android:text="%"
+        android:text="@string/percent"
         app:layout_constraintBottom_toTopOf="@+id/cos"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/neg_pos_button" />
+
+    <Button
+        android:id="@+id/secondPower"
+        style="@style/CalculatorButtonGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginStart="2dp"
+        android:background="#5A5A5A"
+        android:onClick="calcClick"
+        android:text="@string/x_u00b2"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/tan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/modulus_button" />
 
     <Button
         android:id="@+id/division_button"
@@ -102,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:onClick="calcClick"
-        android:text="&#247;"
+        android:text="@string/division"
         app:layout_constraintBottom_toTopOf="@+id/multiply_button"
         app:layout_constraintStart_toStartOf="@+id/guideline" />
 
@@ -112,7 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:onClick="calcClick"
-        android:text="7"
+        android:text="@string/seven"
         app:layout_constraintBottom_toTopOf="@+id/four_button"
         app:layout_constraintStart_toStartOf="parent" />
 

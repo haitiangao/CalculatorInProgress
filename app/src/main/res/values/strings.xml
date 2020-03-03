@@ -3,4 +3,14 @@
     <string name="five_number">5</string>
     <string name="zero_text">0</string>
     <string name="greeting_text">Hi %s how are you today. It is %d degrees outside.</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="_0">0</string>
+    <string name="ac">AC</string>
+    <string name="percent">%</string>
+    <string name="negate">+/-</string>
+    <string name="division">÷</string>
+    <string name="seven">7</string>
+    <string name="x_u00b2">x²</string>
 </resources>

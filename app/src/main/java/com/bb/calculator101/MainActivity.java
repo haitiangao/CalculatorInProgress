@@ -185,6 +185,10 @@ public class MainActivity extends AppCompatActivity {
                 valueA = Double.parseDouble(userInputTextView.getText().toString().trim());
                 operation();
                 break;
+            case R.id.secondPower:
+                operator=8;
+                valueA = Double.parseDouble(userInputTextView.getText().toString().trim());
+                operation();
 
         }
     }
@@ -215,6 +219,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 7://tan
                 answer = Math.tan(valueA);
+                break;
+            case 8://second power
+                answer = valueA*valueA;
                 break;
         }
 
