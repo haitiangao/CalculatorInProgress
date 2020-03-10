@@ -17,6 +17,8 @@
     </style>
     <style name="CalculatorButtonOrange" parent="CalculatorButtonGrey">
         <item name="android:background">#FFA00E</item>
+        <item name="android:layout_margin">1dp</item>
+
     </style>
 
 </resources>

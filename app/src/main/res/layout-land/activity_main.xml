@@ -12,7 +12,7 @@
     <Button
         android:id="@+id/sin"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
@@ -29,6 +29,7 @@
         android:onClick="calcClick"
         android:text="@string/cos"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tan"
         app:layout_constraintStart_toEndOf="@+id/sin" />
 
     <Button
@@ -36,14 +37,11 @@
         style="@style/CalculatorButtonGrey"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
-        android:layout_marginStart="4dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
         android:text="@string/tan"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/cos" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/user_input_textview"
@@ -76,7 +74,7 @@
     <Button
         android:id="@+id/neg_pos_button"
         style="@style/CalculatorButtonGrey"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="61dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
@@ -93,6 +91,7 @@
         android:onClick="calcClick"
         android:text="@string/percent"
         app:layout_constraintBottom_toTopOf="@+id/cos"
+        app:layout_constraintEnd_toStartOf="@+id/secondPower"
         app:layout_constraintStart_toEndOf="@+id/neg_pos_button" />
 
     <Button
@@ -100,15 +99,12 @@
         style="@style/CalculatorButtonGrey"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
-        android:layout_marginStart="2dp"
         android:background="#5A5A5A"
         android:onClick="calcClick"
         android:text="@string/x_u00b2"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/tan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/modulus_button" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/division_button"
